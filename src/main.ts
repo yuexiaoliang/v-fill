@@ -5,12 +5,14 @@ export default {
     app.directive('fill', {
       mounted(el, binding) {
         const {
-          modifiers: { add, subtract },
+          modifiers: { add, subtract, isMinHeight },
           value
         } = binding;
         let height = window.innerHeight - el.getBoundingClientRect().top;
 
-        let set = () => (el.style.height = height + 'px');
+        let set = () => {
+          el.style[isMinHeight ? 'minHeight' : 'height'] = height + 'px';
+        };
 
         if (!value) {
           if (add) {
