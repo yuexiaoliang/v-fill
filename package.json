@@ -1,6 +1,7 @@
 {
   "name": "v-fill",
-  "version": "1.1.1",
+  "version": "1.1.2",
+  "license": "MIT",
   "type": "module",
   "main": "./lib/index.cjs",
   "module": "./lib/index.js",
@@ -8,6 +9,16 @@
   "files": [
     "./lib"
   ],
+  "keywords": [
+    "vue",
+    "directive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuexiaoliang/v-fill.git"
+  },
+  "homepage": "https://github.com/yuexiaoliang/v-fill",
+  "author": "岳晓亮",
   "scripts": {
     "dev": "vite example main.ts --config ./example/vite.config.ts",
     "build": "tsc && vite build",
